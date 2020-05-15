@@ -1,0 +1,92 @@
+
+
+
+
+@media only screen and (max-width: 1200px){
+    
+    .hero-text-box{
+    width: 100%;
+    padding: 0 2%;
+}
+
+    .row{
+        padding: 0 2%;
+        
+    }
+}
+
+
+
+
+
+/*from small tablet to big tablet */
+
+@media only screen and (max-width: 1023px){
+
+    body {
+        font-size: 18px;}
+    
+      section {
+          padding: 60px 0 }
+    
+    .long-copy {
+    
+    width: 80%;
+    margin-left: 10%;
+    
+    }
+        .steps.box{
+          margin-top: 10px
+        }
+    
+    .steps.box:last-child {margin-top: 10px}
+    .works-steps {
+    margin-bottom: 40px;
+        
+        }
+    .works-step:last-of-type{
+        
+     margin-bottom: 60px;
+
+
+}
+    .app-screen {
+          
+        width: 50%; 
+    }
+    
+    .city-features {
+       font-size: 90%;   
+    }
+    
+    
+    .plan-box{
+       width: 100%;
+        margin-left: 0%;
+    }
+    
+    
+
+}
+
+    
+    
+    
+    
+
+/* small phones to small tablet */
+
+@media only screen and (max-width: 767px){
+    
+
+}
+
+/* small fonts */
+
+@media only screen and (max-width: 480px){
+    
+
+}
+
+
+

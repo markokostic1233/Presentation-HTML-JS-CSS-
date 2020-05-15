@@ -1,0 +1,610 @@
+/* -------------------------------------------*/
+/* basic setup */
+/*--------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+html{
+  background-color: white;
+    color: #484848;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    
+/* -------------------------------------------*/
+/*components */
+/*--------------------------------------------*/      
+
+}
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+    
+
+}
+
+header{
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.92)), to(rgba(0, 0, 0, 0.56))
+    ), url(img/hero.jpg);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.56)
+    ), url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.hero-text-box{
+
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+
+  display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: orange;
+    -webkit-transition: background-color 0.4s, border 0.4s, color 0.4s;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+    
+
+}
+
+.btn-ful:link,
+.btn-ful:visited{
+    
+ background-color: rgba(240, 240, 240, 0.22);
+    
+}
+
+.btn-ghst:link,
+.btn-ghst:link {
+    border: 1px solid white;
+    margin-left: 10px;
+    
+    
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #2e261d;
+}
+
+.logo {
+  height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+.logo-black{
+  display: none;
+  height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+
+}
+/*---------------main-navi--------*/
+.main-nav{
+   float: right;
+    list-style: none;
+    margin-top: 55px;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 2px solid transperent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid darkorange;
+    
+  
+}
+
+.sticky{
+ position: fixed;
+ top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+  box-shadow: 0 2px 3px #ededed
+    
+
+}
+.main-nav{
+  margin-top: 15px;
+
+
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #555;
+    padding: 7px 0;
+
+}
+.sticky .logo{display: none}
+.sticky .logo-black{
+display: block;}
+
+/*--------sticy-naci----------*/
+section{
+   padding: 80px 0;
+   
+
+
+}
+h2{
+    text-align: center;
+    word-spacing: 2px;
+    font-weight: 300;
+   margin-top: 0px;
+   margin-bottom: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+h2:after{
+  display: block;
+    height: 2px;
+    background-color: darkorange;
+    content: " ";
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    
+
+}
+.long-copy {
+    text-align: center;
+  line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+/* ----------------------MEALS------*/
+.meals{
+ padding: 0;
+
+}
+
+.section-meals{
+   padding: 0;
+   list-style: none;
+    width: 100%;
+}
+
+.section-meals li{
+    
+   display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+ background-color: black;
+ width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo img {
+  width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    opacity: 0.7;
+}
+
+
+.meal-photo img:hover {
+
+ opacity: 1;
+ -webkit-transform: scale(1.03);
+ transform: scale(1.03);
+}
+
+/*----------------------HOW IT WORKS----------------------*/
+
+
+.section-steps{
+    background-color: rgba(222, 220, 220, 0.93);
+
+
+}
+.steps-box{
+  margin-top: 30px;
+
+
+
+}
+
+.steps-box:first-child{
+   text-align: right;
+   padding-right: 3%;
+
+}
+
+
+.steps-box:last-child{
+    text-align: right;
+   padding-left: 3%;
+    margin-top: 70px;
+
+
+}
+
+.app-screen{
+    margin-top: 30px;
+width: 40%;
+}
+
+.works-step {
+
+margin-bottom: 50px;
+
+
+
+}
+
+.works-step:last-of-type{
+     float: right;
+     margin-bottom: 80px;
+
+
+}
+
+
+
+.works-step div {
+
+   color: orange;
+    border: 2px solid black;
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 9px;
+    font-size: 150%;
+    margin-right: 27px;
+    
+}
+
+.btn-app img{
+   height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/*------------------CITIES-----------------*/
+
+
+.box img {
+   
+width: 100%;
+    height: auto;
+    
+
+}
+
+.city-features{
+
+
+margin-bottom: 5px;
+    
+}
+/*-----------------CUSTOMERS-------------*/
+
+.section-fourth{
+   
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 24, 24, 0.89)), to(rgba(19, 19, 20, 0.84))), url(img/back-customers.jpg);
+   
+    background-image: linear-gradient(rgba(25, 24, 24, 0.89), rgba(19, 19, 20, 0.84)), url(img/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    
+
+
+}
+
+
+blockquote:before{
+    
+    content: "\201C";
+    margin: -4px;
+    font-size: 400%;
+    display: block;
+    position: absolute;
+
+    
+    
+
+
+}
+
+
+
+blockquote{
+    line-height: 30px;
+    padding: 2%;
+    font-style: normal;
+    line-height: 145%;
+    margin-top: 10px;
+    
+
+
+
+
+
+}
+
+cite{
+   
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+
+
+
+}
+
+
+cite img {
+   height: 85px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+
+
+/*----------------EATHING HEALTHY---------*/
+
+.section-plans{
+
+    background-color: rgba(0, 0, 0, 0.24);
+    
+}
+
+.plan-box{
+
+   background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+
+.plan-box div{
+   
+   padding: 15px;
+    border-bottom: 1px solid #cec9c9
+}
+
+.plan-price{
+font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: rgb(255, 186, 0);
+    
+}
+.plan-price-meal{
+   font-size: 80%;
+   
+
+}
+.plan-price span{
+
+   font-size: 30%;
+    font-weight: 300;
+   
+}
+
+.plan-box ul{
+  list-style: none;
+
+}
+
+.plan box ul li {
+   padding: 5px 0;
+
+}
+
+h3{
+  text-transform: uppercase;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+
+
+.plan-box div:first-child{
+   background-color: rgba(195, 195, 195, 0.42);
+   border-top: 
+
+
+
+}
+
+.plan-box div:last-child{
+   text-align: center;
+   font-size: 19px;
+    border:0 ;
+}
+
+/*----------------FORM------------*/
+
+.contact-form {
+
+  width: 50%;
+    margin: 0 auto;
+    
+
+
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+
+  width: 100%;
+  padding: 7px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+
+textarea {
+
+
+  height: 100px;
+
+
+
+
+}
+
+
+
+/*----------------FOOTHER-----------------*/
+
+
+
+footer{
+   background-color:rgba(80, 80, 80, 0.61);
+   
+
+
+
+}
+
+.fother-nav{
+    
+   list-style: none;
+    float: left;
+    
+    
+    
+}
+
+
+.fother-nav li{
+    
+    
+   display: inline-block;
+
+    margin: 20px;
+    
+
+}
+
+
+.aaa{
+  text-align: right;
+  text-decoration:underline;
+    color: white;
+  
+}
+
+
+
+
+/*for animation */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3
+{
+    
+  opacity: 0;
+    animation-duration:  1s;
+    
+}
+
+.js-wp-4{
+animation-duration: 1s;
+
+}
+
+
+.js-wp-1 .animated, 
+.js-wp-2 .animated,
+.js-wp-3 .animated
+{
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
